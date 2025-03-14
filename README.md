@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Website
+# 🍽️ My-Restaurant
 
 This responsive and modern restaurant website is built using **HTML5** and **CSS3**. It features a clean layout, styled menu sections, and an intuitive user interface that provides a professional look and feel.
 
