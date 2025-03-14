@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Bistro - Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">Order Online</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Order Online</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>Place Your Order</h2>
+        <form action="submit_order.php" method="post">
+          <!-- Customer Information -->
+          <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="sophie@gmail.com"
+              required>
+
+            <label for="tel">Telephone:</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              pattern="[0-9]{10}"
+              placeholder="1234567890"
+              required>
+          </fieldset>
+          <fieldset>
+            <legend>Order Details</legend>
+                
+            <!-- Items with Quantity Inputs -->
+            <div class="menu-item">
+                <label for="quantity_bruschetta">Bruschetta - $8</label>
+                <input type="number" id="quantity_bruschetta" name="quantity_bruschetta" min="0" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="quantity_Stuffed_Mushrooms">Stuffed Mushrooms - $10</label>
+                <input type="number" id="quantity_Stuffed_Mushrooms" name="quantity_Stuffed_Mushrooms" min="0" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="quantity_Charcuterie_Board">Charcuterie Board - $15</label>
+                <input type="number" id="quantity_Charcuterie_Board" name="quantity_Charcuterie_Board" min="0" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="quantity_grilled_salmon">Grilled Salmon - $20</label>
+                <input type="number" id="quantity_grilled_salmon" name="quantity_grilled_salmon" min="0" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="quantity_beef_tenderloin">Beef Tenderloin - $28</label>
+                <input type="number" id="quantity_beef_tenderloin" name="quantity_beef_tenderloin" min="0" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="quantity_Chicken_Parmesan">Chicken Parmesan - $22</label>
+                <input type="number" id="quantity_Chicken_Parmesan" name="quantity_Chicken_Parmesan" min="0" value="0">
+            </div>
+
+                <div class="menu-item">
+                    <label for="quantity_Tiramisu">Tiramisu - $9</label>
+                    <input type="number" id="quantity_Tiramisu" name="quantity_Tiramisu" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <label for="quantity_Chocolate_Mousse">Chocolate Mousse - $8</label>
+                    <input type="number" id="quantity_Chocolate_Mousse" name="quantity_Chocolate_Mousse" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <label for="quantity_Cheesecake">Cheesecake - $10</label>
+                    <input type="number" id="quantity_Cheesecake" name="quantity_Cheesecake" min="0" value="0">
+                </div>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="zip">Zip code</label>
+            <input
+              type="text"
+              id="zip"
+              name="zip-code"
+              required
+              pattern="\d{5,5}(-\d{4,4})?"
+              placeholder="55555 or 55555-5555">
+
+            <p id="total-price"><strong>Total Price</strong> $0.00</p>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" size="1" required>
+                <option value="" disabled>Select one or more options</option>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="gift_card">Gift Card</option>
+              </select>
+
+            <button type="submit">Place Order</button>
+          </fieldset>
+        </form>
+        <p><a href="#top">Return to top</a></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Gourmet Bistro. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
