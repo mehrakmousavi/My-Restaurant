@@ -17,3 +17,14 @@ This responsive and modern restaurant website is built using **HTML5** and **CSS
 - CSS3
 - Flexbox
 
+ 📁 My-Restaurant/
+├── index.html
+├── about.html
+├── contact.html
+├── menu.html
+├── order.html
+├── styles.css
+├── /images
+└── /videos
+ 
+
