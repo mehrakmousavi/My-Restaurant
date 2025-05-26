@@ -29,7 +29,7 @@ This responsive and modern restaurant website is built using **HTML5** and **CSS
 └── /videos
  
 How to run this project
-1. git clone https://github.com/mehrakmousavi/my-restaurant.git
+1. git clone [https://github.com/mehrakmousavi/my-restaurant.git](https://mehrakmousavi.github.io/My-Restaurant/)
 2. Open the project folder.
 3. Double-click on index.html — it will open in your browser and display the homepage 
 
